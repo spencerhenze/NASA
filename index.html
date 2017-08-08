@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/style.css">
+    <title>NASA</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <!--header row  -->
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Nasa Awesomeness</h1>
+                <h3>Where all of your NASA dreams come true</h3>
+            </div>
+        </div>
+
+        <!--buttons  -->
+        <div class="row">
+            <div class="col-xs-12">
+                <button type="butotn" class="btn btn-primary" onclick="app.controllers.marsController.loadRover()">Mars Rover</button>
+            </div>
+        </div>
+
+        <!--content display  -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Check it out!</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="content">
+                        </div>
+                        <div id="results">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--end of container-fluid  -->
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app/components/mars-rover/mars-service.js"></script>
+    <script src="app/components/mars-rover/mars-controller.js"></script>
+    <script src="app/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+.card-wrapper {
+    border: 1px solid black;
+    width: 200px;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rover-image {
+    width: 200px;
+}
